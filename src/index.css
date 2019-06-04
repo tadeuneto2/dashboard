@@ -14,5 +14,32 @@ code {
 }
 
 h1, h2, h3, h4, h5, h6{
-  color: #b34321;
+  color: #777;
+  /* color: #b34321; */
+}
+
+.bg-danger{ background: #cc0000;}
+.bg-warning {background: #ff8800;;}
+.bg-success{ background: #007e33;}
+.bg-primary{ background: #5cb7c0;}
+.bg-default{ background: #999;}
+.bg-alter{ background: #5588aa;}
+
+.bg-primary > h1, h2, h3, h4, h5, h6, p,
+.bg-alter > h1, h2, h3, h4, h5, h6, p,
+.bg-warning > h1, h2, h3, h4, h5, h6, p,
+.bg-success > h1, h2, h3, h4, h5, h6, p,
+.bg-default > h1, h2, h3, h4, h5, h6, p
+{
+  color: #fcfcfc;
+}
+.bg-primary > h1,
+.bg-alter > h1,
+.bg-warning > h1,
+.bg-success > h1,
+.bg-default > h1
+{
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
 }

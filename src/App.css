@@ -1,15 +1,15 @@
 .container{
   display: grid;
-  grid-auto-columns: 7vh 1fr;
+  grid-auto-columns: 5vh 1fr;
   grid-auto-rows: 50px 1fr;
   grid-template-areas:  'asideMenu navbar' 'asideMenu content';
   height: 100vh;
   /* min-height: 100%; */
 }
-
 .asideMenu{
   grid-area: asideMenu;
-  background: #b34321;
+  background: #fcfcfc;
+  /* background: #b34321; */
 }
 .asideMenu ul{
   list-style: none;
@@ -26,7 +26,7 @@
    align-items: center;
    padding: 20px;
    justify-content: space-between;
-   /* background: #eee; */
+   border-bottom:solid 1px #eee;
  }
  .navbarRight img{
    width: 35px;
@@ -38,16 +38,40 @@
  }
  .asideMenu ul li{
    padding: 10px 0;
-   font-size: 20px;
+   font-size: 15px;
  }
  .asideMenu ul li a{
-   color: #6e240e;
+   /* color: #6e240e; */
+   color: #999;
+   
  }
  .asideMenu ul li a:hover{
-  color: #491809;
+  color: #5cb7c0;
+  /* color: #491809; */
 }
 .content{
+  margin-top: 20px;
   grid-area: content;
   padding: 0 20px;
   /* background: gray; */
+}
+.min-box{
+  max-height: 100px;
+  height: 100px;
+  margin-right: 5px;
+  padding: 10px;  
+  border: solid 1px #eee;
+  flex: 1;
+}
+.resumo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .resumo{ 
+    flex-direction: column;
+  }
 }
