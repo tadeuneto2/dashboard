@@ -35,7 +35,9 @@ table tr td, table tr th{
 }
 table tr td{
 }
-
+p{
+  color: #777;
+}
 
 .bg-danger{ background: #cc0000 !important;}
 .bg-warning {background: #ff8800 !important;}
@@ -44,11 +46,11 @@ table tr td{
 .bg-default{ background: #999 !important;}
 .bg-alter{ background: #5588aa !important;}
 
-.bg-primary > h1, h2, h3, h4, h5, h6, p,
-.bg-alter > h1, h2, h3, h4, h5, h6, p,
-.bg-warning > h1, h2, h3, h4, h5, h6, p,
-.bg-success > h1, h2, h3, h4, h5, h6, p,
-.bg-default > h1, h2, h3, h4, h5, h6, p
+.bg-primary > h1,
+.bg-alter > h1,
+.bg-warning > h1,
+.bg-success > h1,
+.bg-default > h1
 {
   color: #fcfcfc;
 }

@@ -70,7 +70,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+.filterTable{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 @media only screen and (max-width: 600px) {
   .resumo{ 
