@@ -17,7 +17,7 @@ function LateralMenu() {
     return (
         <div>
             <ul>
-                {menuItens.map((item) => <MenuLink iconMenu={item.icon} path={item.path} />)}
+                {menuItens.map((item, index) => <MenuLink key={index} iconMenu={item.icon} path={item.path} />)}
             </ul>
         </div>
     )

@@ -18,12 +18,31 @@ h1, h2, h3, h4, h5, h6{
   /* color: #b34321; */
 }
 
-.bg-danger{ background: #cc0000;}
-.bg-warning {background: #ff8800;;}
-.bg-success{ background: #007e33;}
-.bg-primary{ background: #5cb7c0;}
-.bg-default{ background: #999;}
-.bg-alter{ background: #5588aa;}
+table, td{
+  border-collapse: collapse;
+  color: #777;
+}
+table{
+  width: 100%;
+}
+table tr th{
+  text-align: left;
+  color: #5588aa;
+}
+table tr td, table tr th{
+  border-bottom: solid 1px #eee;
+  padding: 5px 0;
+}
+table tr td{
+}
+
+
+.bg-danger{ background: #cc0000 !important;}
+.bg-warning {background: #ff8800 !important;}
+.bg-success{ background: #007e33 !important;}
+.bg-primary{ background: #5cb7c0 !important;}
+.bg-default{ background: #999 !important;}
+.bg-alter{ background: #5588aa !important;}
 
 .bg-primary > h1, h2, h3, h4, h5, h6, p,
 .bg-alter > h1, h2, h3, h4, h5, h6, p,

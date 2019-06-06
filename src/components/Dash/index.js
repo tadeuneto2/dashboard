@@ -5,6 +5,7 @@ import user from '../../images/user.jpeg'
 
 import LateralMenu from '../Lateral-menu/Index'
 import Principal from './Principal/Index'
+import ListaProdutos from './Produtos/index'
 
 const Authenticate = false;
 const PrivateRoute = ({component: Component, ...rest}) => {
@@ -25,19 +26,19 @@ function Dashboard() {
             <section className='asideMenu'>
                 <LateralMenu />
             </section>
-            <navbar className='navbar'>
+            <nav className='navbar'>
                 <div>
                     <h1>Dashboard - <small>ReactJS</small> </h1>
                 </div>
                 <div className='navbarRight'>
-                    <img src={user} />
+                    <img src={user} alt='User system' />
                 </div>
-            </navbar>
+            </nav>
             <section className='content'>
                 <Switch>
                     <Route path='/' exact component={Principal} />
                     <Route path='/users' exact render={() => <h1>User</h1>} />
-                    <Route path='/list' exact render={() => <h1>List</h1>} />
+                    <Route path='/list' exact component={ListaProdutos} />
                     <Route path='/logout' exact render={() => <h1>Logout</h1>} />
                     <PrivateRoute path='/private' component={RouteTeste} />
                 </Switch>

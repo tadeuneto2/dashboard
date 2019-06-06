@@ -9,6 +9,7 @@
 .asideMenu{
   grid-area: asideMenu;
   background: #fcfcfc;
+  /* border-right: solid 1px #eee; */
   /* background: #b34321; */
 }
 .asideMenu ul{
@@ -26,7 +27,7 @@
    align-items: center;
    padding: 20px;
    justify-content: space-between;
-   border-bottom:solid 1px #eee;
+   border-bottom:solid 1px #efefef;
  }
  .navbarRight img{
    width: 35px;
@@ -62,6 +63,7 @@
   padding: 10px;  
   border: solid 1px #eee;
   flex: 1;
+  background: #ccc;
 }
 .resumo{
   display: flex;

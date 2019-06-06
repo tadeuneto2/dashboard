@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { BASE_URL } from '../../../config';
 
-const Principal = props => {
+const Principal = props => {  
+
     return (
         <section>
             <section className='resumo'>
@@ -17,7 +20,7 @@ const Principal = props => {
                 </div>
             </section>
             <section className=''>
-
+                
             </section>
         </section>
     )
