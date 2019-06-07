@@ -8,19 +8,31 @@ body {
   font-size: 14px;
 }
 
+/*
+  cores interessantes:
+    #304559
+    #A0B2C3
+    #8197AB
+    #73CAD3
+    #C9563F -- laranja fosco
+    #ECE7E0 -- cinza
+    #202735 -- azul bem escuro
+    #202735 -- cinza escuro
+*/
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 h1, h2, h3, h4, h5, h6{
-  color: #777;
+  color: #8197AB;
   /* color: #b34321; */
 }
 
 table, td{
   border-collapse: collapse;
-  color: #777;
+  color: #8197AB;
 }
 table{
   width: 100%;
@@ -33,10 +45,35 @@ table tr td, table tr th{
   border-bottom: solid 1px #eee;
   padding: 5px 0;
 }
-table tr td{
+table tr td:first-child{
+  min-width: 150px;
 }
 p{
-  color: #777;
+  color: #A0B2C3;
+}
+input[type=text], select{
+  border: solid 1px #eee;
+  padding: 5px; width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.iconsButtons{
+  padding: 10px;
+}
+.iconsButtons:hover{
+  cursor: pointer;
+}
+
+.active{
+  color: #32D3AA;
+}
+.inactive{
+  color: #ccc;
+}
+
+.edit{
+  color: #5588aa;
 }
 
 .bg-danger{ background: #cc0000 !important;}
